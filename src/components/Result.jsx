@@ -1,10 +1,6 @@
-export default function Result() {
-  return (
-    <>
-    <thead></thead>
-    <tbody></tbody>
-    
-    </>
-  )
+import { calculateInvestmentResults } from "../util/investment.js";
 
+export default function Result({ input }) {
+  const resultsData = calculateInvestmentResults(input);
+  return console.log(resultsData);
 }
